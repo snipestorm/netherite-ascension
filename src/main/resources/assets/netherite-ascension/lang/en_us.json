@@ -1,5 +1,6 @@
 {
   "item.netherite-ascension.divine_netherite_ingot": "Divine Netherite Ingot",
-  "item.netherite-ascension.alter_star": "Alter Star",
+  "item.netherite-ascension.altar_star": "Altar Star",
+  "block.netherite-ascension.chiseled_stone_altar": "Chiseled Stone Altar",
   "creativetab.netherite-ascension.netherite_ascension" : "Netherite Ascension"
 }

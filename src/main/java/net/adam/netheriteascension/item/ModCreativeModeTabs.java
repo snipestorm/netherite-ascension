@@ -1,6 +1,7 @@
 package net.adam.netheriteascension.item;
 
 import net.adam.netheriteascension.NetheriteAscension;
+import net.adam.netheriteascension.block.ModBlocks;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -17,7 +18,8 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.netherite-ascension.netherite_ascension"))
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.DIVINE_NETHERITE_INGOT);
-                        output.accept(ModItems.ALTER_STAR);
+                        output.accept(ModItems.ALTAR_STAR);
+                        output.accept(ModBlocks.CHISELED_STONE_ALTAR);
                     }).build());
 
 
