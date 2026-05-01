@@ -1,5 +1,7 @@
 package net.adam.netheriteascension;
 
+import net.adam.netheriteascension.item.ModCreativeModeTabs;
+import net.adam.netheriteascension.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -12,5 +14,7 @@ public class NetheriteAscension implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Welcome to Netherite Ascension!");
+		ModItems.registerModItems();
+		ModCreativeModeTabs.registerCreativeModeTabs();
 	}
 }
