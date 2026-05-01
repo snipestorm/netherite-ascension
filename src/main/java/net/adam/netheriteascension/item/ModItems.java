@@ -13,6 +13,7 @@ import java.util.function.Function;
 public class ModItems {
 
     public static final Item DIVINE_NETHERITE_INGOT = registerItem("divine_netherite_ingot", Item::new);
+    public static final Item ALTER_STAR = registerItem("alter_star", Item::new);
 
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {
         return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(NetheriteAscension.MOD_ID, name),

@@ -21,5 +21,6 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerators itemModelGenerators) {
         itemModelGenerators.generateFlatItem(ModItems.DIVINE_NETHERITE_INGOT, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.ALTER_STAR, ModelTemplates.FLAT_ITEM);
     }
 }

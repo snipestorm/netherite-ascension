@@ -17,6 +17,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.netherite-ascension.netherite_ascension"))
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.DIVINE_NETHERITE_INGOT);
+                        output.accept(ModItems.ALTER_STAR);
                     }).build());
 
 
