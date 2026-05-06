@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_top",
+  "textures": {
+    "side": "netherite-ascension:block/divine_altar_side",
+    "top": "netherite-ascension:block/divine_altar_top_lit"
+  }
+}

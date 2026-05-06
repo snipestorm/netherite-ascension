@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "netherite-ascension:block/divine_altar"
+    },
+    "lit=true": {
+      "model": "netherite-ascension:block/divine_altar_lit"
+    }
+  }
+}

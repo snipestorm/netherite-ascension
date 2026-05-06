@@ -8,12 +8,13 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 
 import java.util.function.Function;
 
 public class ModItems {
 
-    public static final Item DIVINE_NETHERITE_INGOT = registerItem("divine_netherite_ingot", Item::new);
+    public static final Item DIVINE_NETHERITE_INGOT = registerItem("divine_netherite_ingot", properties -> new Item(properties.rarity(Rarity.EPIC)));
     public static final Item ALTAR_STAR = registerItem("altar_star", AltarStarItem::new);
 
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {
@@ -21,7 +22,7 @@ public class ModItems {
                 function.apply(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(NetheriteAscension.MOD_ID, name)))));
     }
 
-    public static void registerModItems() {
+    public static void load() {
         NetheriteAscension.LOGGER.info("Registering Netherite Ascension Items!");
     }
 }

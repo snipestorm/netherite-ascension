@@ -19,11 +19,11 @@ public class ModCreativeModeTabs {
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.DIVINE_NETHERITE_INGOT);
                         output.accept(ModItems.ALTAR_STAR);
-                        output.accept(ModBlocks.CHISELED_STONE_ALTAR);
+                        output.accept(ModBlocks.DIVINE_ALTAR);
                     }).build());
 
 
-    public static void registerCreativeModeTabs() {
+    public static void load() {
         NetheriteAscension.LOGGER.info("Registering Netherite Ascension Creative Mode Tabs!");
     }
 }
