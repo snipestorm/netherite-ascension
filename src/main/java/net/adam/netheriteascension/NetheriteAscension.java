@@ -8,8 +8,6 @@ import net.adam.netheriteascension.structure.ModStructures;
 import net.adam.netheriteascension.util.AltarActivationManager;
 import net.adam.netheriteascension.util.NetheriteAscensionHelper;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
-import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
