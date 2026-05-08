@@ -1,0 +1,36 @@
+{
+  "parent" : "netherite-ascension:netherite-ascension/altar_star",
+  "criteria": {
+    "altar_star_thrown_overworld": {
+      "trigger": "netherite-ascension:altar_star_1"
+    },
+    "altar_star_thrown_nether": {
+      "trigger": "netherite-ascension:altar_star_2"
+    },
+    "altar_star_thrown_end": {
+      "trigger": "netherite-ascension:altar_star_3"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "netherite-ascension:item/altar_star",
+    "description": {
+      "translate": "advancements.netherite-ascension.altar_star_thrown.description"
+    },
+    "icon": {
+      "id": "netherite-ascension:altar_star"
+    },
+
+    "hidden" : false,
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.netherite-ascension.altar_star_thrown.title"
+    }
+  },
+  "requirements": [
+    ["altar_star_thrown_overworld"],
+    ["altar_star_thrown_nether"],
+    ["altar_star_thrown_end"]
+  ],
+  "sends_telemetry_event": true
+}

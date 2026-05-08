@@ -38,6 +38,9 @@ public class DivineAltarBlock extends Block {
     @Override
     protected void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
         tick(state, level, pos, random);
+        if (!state.getValue(lit)) {
+            level.scheduleTick(pos, this, 1);
+        }
     }
 
     List<Vector3i> offsets = List.of(
@@ -96,10 +99,10 @@ public class DivineAltarBlock extends Block {
         if (level.isClientSide()) return;
         boolean isLit = blockState.getValue(lit);
         if (!isLit) return;
-        level.setBlock(pos, Blocks.ENCHANTING_TABLE.defaultBlockState(), 3);
+        level.setBlock(pos, ModBlocks.RITUAL_ALTAR.defaultBlockState(), 3);
         for (Vector3i offset : offsets) {
             BlockPos targetPos = pos.offset(offset.x, offset.y, offset.z);
-            level.setBlock(targetPos, Blocks.OBSIDIAN.defaultBlockState(), 3);
+            level.setBlock(targetPos, ModBlocks.OBSIDIAN_ALTAR.defaultBlockState(), 3);
         }
     }
     // ⏱ progression tick

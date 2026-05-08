@@ -1,7 +1,6 @@
 package net.adam.netheriteascension.entity;
 
 import net.adam.netheriteascension.NetheriteAscension;
-import net.adam.netheriteascension.item.custom.AltarStarEntity;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -20,6 +19,6 @@ public class ModEntities {
             EntityType.Builder.<AltarStarEntity>of(AltarStarEntity::new,MobCategory.MISC).noLootTable().sized(0.25F, 0.25F).clientTrackingRange(4).updateInterval(4).build(ALTAR_STAR_KEY));
 
     public static void load() {
-        NetheriteAscension.LOGGER.info("Loading Mod Entities");
+        NetheriteAscension.LOGGER.info("Registering Netherite Ascension Entities!");
     }
 }

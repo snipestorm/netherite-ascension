@@ -1,6 +1,5 @@
-package net.adam.netheriteascension.item.custom;
+package net.adam.netheriteascension.entity;
 
-import net.adam.netheriteascension.entity.ModEntities;
 import net.adam.netheriteascension.item.ModItems;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.syncher.EntityDataAccessor;

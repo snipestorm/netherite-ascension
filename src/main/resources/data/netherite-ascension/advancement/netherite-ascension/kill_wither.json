@@ -1,0 +1,41 @@
+{
+  "parent" : "netherite-ascension:netherite-ascension/root",
+  "criteria": {
+    "killed_wither": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:wither"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "netherite-ascension:item/altar_star",
+    "description": {
+      "translate": "advancements.netherite-ascension.kill_wither.description"
+    },
+    "icon": {
+      "id": "minecraft:nether_star"
+    },
+    "frame" : "challenge",
+    "hidden" : false,
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.netherite-ascension.kill_wither.title"
+    }
+  },
+  "requirements": [
+    [
+      "killed_wither"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

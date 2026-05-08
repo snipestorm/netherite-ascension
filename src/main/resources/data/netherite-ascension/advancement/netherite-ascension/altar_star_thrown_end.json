@@ -1,0 +1,30 @@
+{
+  "parent": "netherite-ascension:netherite-ascension/altar_star_thrown",
+  "criteria": {
+    "use_star": {
+      "trigger": "netherite-ascension:altar_star_end_trigger"
+    }
+  },
+  "requirements": [
+    [
+      "use_star"
+    ]
+  ],
+  "rewards": {},
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.netherite-ascension.altar_star_thrown_end.description"
+    },
+    "icon": {
+      "id": "minecraft:end_stone"
+    },
+    "frame": "goal",
+    "hidden": true,
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.netherite-ascension.altar_star_thrown_end.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

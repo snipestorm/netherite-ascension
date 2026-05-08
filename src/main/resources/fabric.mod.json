@@ -20,6 +20,10 @@
 		],
 		"fabric-datagen": [
 			"net.adam.netheriteascension.NetheriteAscensionDataGenerator"
+		],
+
+		"client": [
+			"net.adam.netheriteascension.NetheriteAscensionClient"
 		]
 	},
 	"mixins": [
