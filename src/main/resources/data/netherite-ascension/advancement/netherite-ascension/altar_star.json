@@ -1,0 +1,37 @@
+{
+  "parent" : "netherite-ascension:netherite-ascension/kill_wither",
+  "criteria": {
+    "altar_star": {
+      "conditions": {
+        "items": [
+          {
+            "items": "netherite-ascension:altar_star"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "netherite-ascension:item/altar_star",
+    "description": {
+      "translate": "advancements.netherite-ascension.altar_star.description"
+    },
+    "icon": {
+      "id": "netherite-ascension:altar_star"
+    },
+
+    "hidden" : false,
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.netherite-ascension.altar_star.title"
+    }
+  },
+  "requirements": [
+    [
+      "altar_star"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

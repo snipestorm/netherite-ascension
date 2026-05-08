@@ -1,9 +1,12 @@
 package net.adam.netheriteascension.item.custom;
 
+import net.adam.netheriteascension.advancement.*;
 import net.adam.netheriteascension.block.ModBlocks;
 import net.adam.netheriteascension.block.custom.DivineAltarBlock;
+import net.adam.netheriteascension.entity.AltarStarEntity;
 import net.adam.netheriteascension.util.NetheriteAscensionHelper;
 import net.minecraft.advancements.CriteriaTriggers;
+import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
@@ -18,6 +21,8 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.level.Level;
@@ -28,6 +33,8 @@ import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.function.Consumer;
+
 public class AltarStarItem extends Item {
 
 
@@ -36,7 +43,20 @@ public class AltarStarItem extends Item {
 
     }
 
-    public boolean messageSent = false;
+    public boolean endmessageSent = false;
+    public boolean overworldmessageSent = false;
+    public boolean nethermessageSent = false;
+
+    @Override
+    public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display, Consumer<Component> builder, TooltipFlag tooltipFlag) {
+        super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+
+        if (Minecraft.getInstance().hasShiftDown()) {
+            builder.accept(Component.translatable("tooltip.netherite-ascension.altar_star_launch"));
+              } else {
+            builder.accept(Component.translatable("tooltip.netherite-ascension.altar_star"));
+        }
+    }
 
     @Override
     public InteractionResult useOn(UseOnContext context) {
@@ -62,6 +82,9 @@ public class AltarStarItem extends Item {
         Player player = context.getPlayer();
         ServerPlayer serverPlayer = (ServerPlayer) player;
         ServerLevel serverWorld = (ServerLevel) level;
+
+
+
         // Set altar to lit
         BlockState newState = state.setValue(DivineAltarBlock.lit, true);
         level.setBlock(pos, newState, 3);
@@ -70,32 +93,36 @@ public class AltarStarItem extends Item {
         context.getItemInHand().shrink(1);
         // ⏱ Delay (40 ticks = 2 seconds)
         level.scheduleTick(pos, newState.getBlock(), 80);
+        ModAdvancements.altarStarUsedOnAltar(serverPlayer);
+
 
     }
-
 
     @Override
     public @NotNull InteractionResult use(@NotNull Level level, Player player, @NotNull InteractionHand usedHand) {
         ItemStack itemStack = player.getItemInHand(usedHand);
         BlockHitResult hitResult = getPlayerPOVHitResult(level, player, ClipContext.Fluid.NONE);
         ResourceKey<Level> dimensions = level.dimension();
-
-
-
         if (hitResult.getType() == HitResult.Type.BLOCK && level.getBlockState(hitResult.getBlockPos()).is(ModBlocks.DIVINE_ALTAR)) {
             return InteractionResult.PASS;
         } else {
             player.startUsingItem(usedHand);
-            if (dimensions == level.OVERWORLD && level.isClientSide()) {
+            if (dimensions == level.OVERWORLD && !level.isClientSide() && !overworldmessageSent) {
                 player.sendSystemMessage(Component.literal("Seems to be an Ancient Star, It is trying to lead me somewhere, but it doesn't seem to work in The Overworld..."));
+                overworldmessageSent = true;
+                ModAdvancements.alterStarThrownOverworld((ServerPlayer) player);
             }
-            if (dimensions == level.NETHER && level.isClientSide()) {
-                player.sendSystemMessage(Component.literal("Seems to be an Ancient Star, It is trying to lead me somewhere, but it wont seem to work in The Nether..."));
+            if (dimensions == level.NETHER && !level.isClientSide() && !nethermessageSent) {
+                player.sendSystemMessage(Component.literal("Seems to be an Ancient Star, It is trying to lead me somewhere, but it doesn't seem to work in The Nether..."));
+                nethermessageSent = true;
+                ModAdvancements.alterStarThrownNether((ServerPlayer) player);
             }
-            if (dimensions == level.END && level.isClientSide() && !messageSent) {
-                player.sendSystemMessage(Component.literal("I wonder where it will take me..."));
-                messageSent = true;
+            if (dimensions == level.END && !level.isClientSide() && !endmessageSent) {
+                player.sendSystemMessage(Component.literal("Seems to be an Ancient Star, It is working in The End, I wonder where it will take me..."));
+                endmessageSent = true;
+                ModAdvancements.alterStarThrownEnd((ServerPlayer) player);
             }
+            //more irrelevant code below not related to query//
             if (level instanceof ServerLevel serverLevel) {
 
                 BlockPos nearestMapFeature = serverLevel.findNearestMapStructure(NetheriteAscensionHelper.ALTAR_STAR_STRUCTURE_KEY, player.blockPosition(), 100, false);

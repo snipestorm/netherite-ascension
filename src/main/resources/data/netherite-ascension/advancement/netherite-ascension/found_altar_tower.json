@@ -1,0 +1,51 @@
+{
+  "parent": "netherite-ascension:netherite-ascension/altar_star_thrown_end",
+  "criteria": {
+    "entered_structure": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structures": "netherite-ascension:altar_tower"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+
+  "requirements": [
+    [
+      "entered_structure"
+    ]
+  ],
+
+  "rewards": {},
+
+  "display": {
+    "announce_to_chat": true,
+
+    "description": {
+      "translate": "advancements.netherite-ascension.found_altar.description"
+    },
+
+    "icon": {
+      "id": "netherite-ascension:divine_altar"
+    },
+
+
+    "hidden": true,
+    "show_toast": true,
+
+    "title": {
+      "translate": "advancements.netherite-ascension.found_altar.title"
+    }
+  },
+
+  "sends_telemetry_event": true
+}

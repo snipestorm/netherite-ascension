@@ -2,6 +2,8 @@ package net.adam.netheriteascension.block;
 
 import net.adam.netheriteascension.NetheriteAscension;
 import net.adam.netheriteascension.block.custom.DivineAltarBlock;
+import net.adam.netheriteascension.block.custom.ObsidianAltarBlock;
+import net.adam.netheriteascension.block.custom.RitualAltarBlock;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -13,12 +15,16 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.material.MapColor;
 
 import java.util.function.Function;
 
 public class ModBlocks {
 
     public static final Block DIVINE_ALTAR = registerBlock("divine_altar", properties -> new DivineAltarBlock(properties.strength(55f,12000f).sound(SoundType.DEEPSLATE).lightLevel(blockstate -> blockstate.getValue(BlockStateProperties.LIT) ? 15 : 5)));
+    public static final Block OBSIDIAN_ALTAR = registerBlock("obsidian_altar", properties -> new ObsidianAltarBlock(properties.strength(55f,12000f).sound(SoundType.DEEPSLATE).noOcclusion().noLootTable()));
+    public static final Block RITUAL_ALTAR = registerBlock("ritual_altar", properties -> new RitualAltarBlock(properties.strength(55f,12000f).sound(SoundType.DEEPSLATE).noOcclusion().noLootTable()));
+    public static final Block DIVINE_NETHERITE_BLOCK = registerBlock("divine_netherite_block", properties -> new Block(properties.mapColor(MapColor.COLOR_RED).requiresCorrectToolForDrops().strength(50f,1200F)));
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {
         Block toRegister = function.apply(BlockBehaviour.Properties.of()

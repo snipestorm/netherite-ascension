@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "netherite-ascension:block/divine_netherite_block"
+  }
+}

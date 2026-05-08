@@ -1,0 +1,41 @@
+{
+  "parent" : "netherite-ascension:netherite-ascension/root",
+  "criteria": {
+    "killed_warden": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:ender_dragon"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "netherite-ascension:item/altar_star",
+    "description": {
+      "translate": "advancements.netherite-ascension.kill_warden.description"
+    },
+    "icon": {
+      "id": "netherite-ascension:divine_netherite_upgrade_smithing_template"
+    },
+    "frame" : "challenge",
+    "hidden" : false,
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.netherite-ascension.kill_warden.title"
+    }
+  },
+  "requirements": [
+    [
+      "killed_warden"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

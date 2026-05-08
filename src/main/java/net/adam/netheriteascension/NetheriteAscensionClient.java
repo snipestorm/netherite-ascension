@@ -1,9 +1,10 @@
 package net.adam.netheriteascension;
 
-import net.adam.netheriteascension.entity.ModEntities;
+import net.adam.netheriteascension.block.entity.ModBlockEntities;
+import net.adam.netheriteascension.block.entity.renderer.ObsidianAlterBlockEntityRenderer;
+import net.adam.netheriteascension.block.entity.renderer.RitualAlterBlockEntityRenderer;
 import net.fabricmc.api.ClientModInitializer;
-import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
-import net.minecraft.client.renderer.entity.ThrownItemRenderer;
+import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 
 public class NetheriteAscensionClient implements ClientModInitializer {
     /**
@@ -11,6 +12,9 @@ public class NetheriteAscensionClient implements ClientModInitializer {
      */
     @Override
     public void onInitializeClient() {
+
+        BlockEntityRenderers.register(ModBlockEntities.RITUAL_ALTAR_BE, RitualAlterBlockEntityRenderer::new);
+        BlockEntityRenderers.register(ModBlockEntities.OBSIDIAN_ALTAR_BE, ObsidianAlterBlockEntityRenderer::new);
 
     }
 }

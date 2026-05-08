@@ -1,0 +1,30 @@
+{
+  "parent": "netherite-ascension:netherite-ascension/found_altar_tower",
+  "criteria": {
+    "use_star": {
+      "trigger": "netherite-ascension:altar_star_used_on_altar"
+    }
+  },
+  "requirements": [
+    [
+      "use_star"
+    ]
+  ],
+  "rewards": {},
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.netherite-ascension.altar_star_used_on_altar.description"
+    },
+    "icon": {
+      "id": "netherite-ascension:divine_altar"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.netherite-ascension.altar_star_used_on_altar.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

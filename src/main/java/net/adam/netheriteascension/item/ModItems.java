@@ -15,7 +15,9 @@ import java.util.function.Function;
 public class ModItems {
 
     public static final Item DIVINE_NETHERITE_INGOT = registerItem("divine_netherite_ingot", properties -> new Item(properties.rarity(Rarity.EPIC)));
-    public static final Item ALTAR_STAR = registerItem("altar_star", AltarStarItem::new);
+    public static final Item DIVINE_NETHERITE_UPGRADE_SMITHING_TEMPLATE = registerItem("divine_netherite_upgrade_smithing_template", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item ALTAR_STAR = registerItem("altar_star", properties -> new AltarStarItem(properties.rarity(Rarity.RARE)));
+    public static final Item ICON_ITEM = registerItem("icon_item", properties -> new Item(properties.rarity(Rarity.UNCOMMON)));
 
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {
         return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(NetheriteAscension.MOD_ID, name),

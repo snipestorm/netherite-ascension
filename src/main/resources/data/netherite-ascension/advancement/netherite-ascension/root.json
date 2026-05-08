@@ -1,0 +1,34 @@
+{
+  "criteria": {
+    "crafting_table": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:crafting_table"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "netherite-ascension:block/divine_netherite_block",
+    "description": {
+      "translate": "advancements.netherite-ascension.root.description"
+    },
+    "icon": {
+      "id": "netherite-ascension:icon_item"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.netherite-ascension.root.title"
+    }
+  },
+  "requirements": [
+    [
+      "crafting_table"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
