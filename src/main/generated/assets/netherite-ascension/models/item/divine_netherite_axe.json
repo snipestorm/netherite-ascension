@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "netherite-ascension:item/divine_netherite_axe"
+  }
+}

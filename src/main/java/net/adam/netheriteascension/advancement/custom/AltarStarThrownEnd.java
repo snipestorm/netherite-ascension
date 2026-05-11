@@ -1,4 +1,4 @@
-package net.adam.netheriteascension.advancement;
+package net.adam.netheriteascension.advancement.custom;
 
 
 import com.mojang.serialization.Codec;
@@ -11,12 +11,12 @@ import net.minecraft.server.level.ServerPlayer;
 
 import java.util.Optional;
 
-public class AltarStarUsedOnAltar extends SimpleCriterionTrigger<AltarStarUsedOnAltar.Instance> {
+public class AltarStarThrownEnd extends SimpleCriterionTrigger<AltarStarThrownEnd.Instance> {
 
     public static final Identifier ID =
-            Identifier.fromNamespaceAndPath(NetheriteAscension.MOD_ID, "altar_star_used_on_altar");
+            Identifier.fromNamespaceAndPath(NetheriteAscension.MOD_ID, "altar_star_3");
 
-    public static final AltarStarUsedOnAltar INSTANCE = new AltarStarUsedOnAltar();
+    public static final AltarStarThrownEnd INSTANCE = new AltarStarThrownEnd();
 
     // ✅ REQUIRED in modern versions
     public static final Codec<Instance> CODEC = RecordCodecBuilder.create(instance ->

@@ -1,4 +1,4 @@
-package net.adam.netheriteascension.advancement;
+package net.adam.netheriteascension.advancement.custom;
 
 
 import com.mojang.serialization.Codec;

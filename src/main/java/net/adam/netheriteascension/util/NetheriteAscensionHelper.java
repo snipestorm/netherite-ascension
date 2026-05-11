@@ -7,6 +7,8 @@ import net.adam.netheriteascension.block.entity.ModBlockEntities;
 import net.adam.netheriteascension.entity.ModEntities;
 import net.adam.netheriteascension.item.ModCreativeModeTabs;
 import net.adam.netheriteascension.item.ModItems;
+import net.adam.netheriteascension.networking.ModPackets;
+import net.adam.netheriteascension.recipe.ModRecipes;
 import net.adam.netheriteascension.structure.ModStructures;
 import net.adam.netheriteascension.util.renderers.ModRenderers;
 import net.minecraft.core.registries.Registries;
@@ -29,10 +31,12 @@ public class NetheriteAscensionHelper {
         ModStructures.load();
         ModEntities.load();
         ModBlockEntities.load();
+        ModRecipes.load();
     }
 
     public static void loadAllUtilities() {
         NetheriteAscension.LOGGER.info("Registering Netherite Ascension Utilities!");
+        ModPackets.loadPackets();
         ModRenderers.load();
         ModCreativeModeTabs.load();
         ModAdvancements.load();

@@ -19,7 +19,14 @@ public class ModCreativeModeTabs {
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.DIVINE_NETHERITE_INGOT);
                         output.accept(ModBlocks.DIVINE_NETHERITE_BLOCK);
+                        output.accept(ModItems.DIVINE_NETHERITE_UPGRADE_SMITHING_TEMPLATE);
                         output.accept(ModItems.ALTAR_STAR);
+                        output.accept(ModItems.DIVINE_NETHERITE_AXE);
+                        output.accept(ModItems.DIVINE_NETHERITE_PICKAXE);
+                        output.accept(ModItems.DIVINE_NETHERITE_HOE);
+                        output.accept(ModItems.DIVINE_NETHERITE_SHOVEL);
+                        output.accept(ModItems.DIVINE_NETHERITE_SWORD);
+                        output.accept(ModItems.DIVINE_NETHERITE_SPEAR);
                         output.accept(ModBlocks.DIVINE_ALTAR);
                         output.accept(ModBlocks.OBSIDIAN_ALTAR);
                         output.accept(ModBlocks.RITUAL_ALTAR);

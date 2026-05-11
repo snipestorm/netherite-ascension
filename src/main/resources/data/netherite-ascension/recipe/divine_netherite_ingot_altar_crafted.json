@@ -1,0 +1,18 @@
+{
+  "type": "netherite-ascension:altar_crafting",
+  "ingredients": [
+    "minecraft:nether_star",
+
+    "minecraft:netherite_ingot",
+    "minecraft:netherite_ingot",
+    "minecraft:netherite_ingot",
+    "minecraft:netherite_ingot",
+    "minecraft:netherite_ingot",
+    "minecraft:netherite_ingot",
+    "minecraft:netherite_ingot",
+    "minecraft:netherite_ingot"
+  ],
+  "result": {
+    "id": "netherite-ascension:divine_netherite_ingot"
+  }
+}

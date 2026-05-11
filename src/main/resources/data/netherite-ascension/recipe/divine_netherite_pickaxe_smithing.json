@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#netherite-ascension:divine_netherite_tool_materials",
+  "base": "minecraft:netherite_pickaxe",
+  "result": {
+    "id": "netherite-ascension:divine_netherite_pickaxe"
+  },
+  "template": "netherite-ascension:divine_netherite_upgrade_smithing_template"
+}

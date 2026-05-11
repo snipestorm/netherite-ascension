@@ -1,6 +1,7 @@
 package net.adam.netheriteascension.advancement;
 
 import net.adam.netheriteascension.NetheriteAscension;
+import net.adam.netheriteascension.advancement.custom.*;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.server.level.ServerPlayer;
@@ -9,6 +10,10 @@ public class ModAdvancements {
 
     public static void altarStarUsedOnAltar(ServerPlayer serverPlayer) {
         AltarStarUsedOnAltar.INSTANCE.trigger(serverPlayer);
+    }
+
+    public static void altarCrafting(ServerPlayer serverPlayer) {
+        AltarCrafting.INSTANCE.trigger(serverPlayer);
     }
 
     public static void alterStarThrownOverworld(ServerPlayer serverPlayer) {
@@ -67,6 +72,11 @@ public class ModAdvancements {
                 BuiltInRegistries.TRIGGER_TYPES,
                 AltarStarUsedOnAltar.ID,
                 AltarStarUsedOnAltar.INSTANCE
+        );
+        Registry.register(
+                BuiltInRegistries.TRIGGER_TYPES,
+                AltarCrafting.ID,
+                AltarCrafting.INSTANCE
         );
     }
 }

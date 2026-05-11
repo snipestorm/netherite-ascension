@@ -1,5 +1,7 @@
 package net.adam.netheriteascension;
 
+import net.adam.netheriteascension.datagen.ModBlockTagProvider;
+import net.adam.netheriteascension.datagen.ModItemTagProvider;
 import net.adam.netheriteascension.datagen.ModModelProvider;
 import net.adam.netheriteascension.datagen.ModRecipeProvider;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
@@ -12,5 +14,7 @@ public class NetheriteAscensionDataGenerator implements DataGeneratorEntrypoint 
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModRecipeProvider::new);
+		pack.addProvider(ModItemTagProvider::new);
+		pack.addProvider(ModBlockTagProvider::new);
 	}
 }

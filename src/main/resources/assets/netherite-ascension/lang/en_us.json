@@ -1,14 +1,25 @@
 {
   "item.netherite-ascension.divine_netherite_ingot": "Divine Netherite Ingot",
   "item.netherite-ascension.divine_netherite_upgrade_smithing_template": "Divine Netherite Upgrade Smithing Template",
-  "block.netherite-ascension.divine_netherite_block": "Divine Netherite Block",
   "item.netherite-ascension.altar_star": "Altar Star",
+  "item.netherite-ascension.divine_netherite_sword": "Divine Netherite Sword",
+  "item.netherite-ascension.divine_netherite_spear": "Divine Netherite Spear",
+  "item.netherite-ascension.divine_netherite_pickaxe": "Divine Netherite Pickaxe",
+  "item.netherite-ascension.divine_netherite_axe": "Divine Netherite Axe",
+  "item.netherite-ascension.divine_netherite_shovel": "Divine Netherite Shovel",
+  "item.netherite-ascension.divine_netherite_hoe": "Divine Netherite Hoe",
+
+  "block.netherite-ascension.divine_netherite_block": "Divine Netherite Block",
   "block.netherite-ascension.divine_altar": "Divine Altar",
   "block.netherite-ascension.obsidian_altar": "Obsidian Altar",
   "block.netherite-ascension.ritual_altar": "Ritual Altar",
+
   "creativetab.netherite-ascension.netherite_ascension" : "Netherite Ascension",
+
   "tooltip.netherite-ascension.altar_star" : "Press Shift For More Info",
   "tooltip.netherite-ascension.altar_star_launch" : "Right Click To Launch Me",
+
+
 
   "advancements.netherite-ascension.root.title" : "Netherite Ascension",
   "advancements.netherite-ascension.root.description" : "Welcome To Netherite Ascension",
@@ -31,5 +42,9 @@
   "advancements.netherite-ascension.found_altar.title" : "A Strange Dark Tower",
   "advancements.netherite-ascension.found_altar.description" : "How Is It Floating?",
   "advancements.netherite-ascension.altar_star_used_on_altar.title" : "An Unusual Altar",
-  "advancements.netherite-ascension.altar_star_used_on_altar.description": "I Should Place My Star On It"
+  "advancements.netherite-ascension.altar_star_used_on_altar.description": "I Should Place My Star On It",
+  "advancements.netherite-ascension.altar_crafting.title" : "Altar Crafter",
+  "advancements.netherite-ascension.altar_crafting.description": "Complete An Altar Craft",
+  "advancements.netherite-ascension.divine_upgrade.title" : "Its Divine!",
+  "advancements.netherite-ascension.divine_upgrade.description": "Upgrade A Piece Of Netherite Equipment Or Armour To Divine Netherite"
 }

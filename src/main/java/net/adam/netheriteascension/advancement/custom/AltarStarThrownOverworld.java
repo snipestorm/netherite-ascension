@@ -1,4 +1,4 @@
-package net.adam.netheriteascension.advancement;
+package net.adam.netheriteascension.advancement.custom;
 
 
 import com.mojang.serialization.Codec;
@@ -11,12 +11,12 @@ import net.minecraft.server.level.ServerPlayer;
 
 import java.util.Optional;
 
-public class AltarStarThrownNetherSubAchievementTrigger extends SimpleCriterionTrigger<AltarStarThrownNetherSubAchievementTrigger.Instance> {
+public class AltarStarThrownOverworld extends SimpleCriterionTrigger<AltarStarThrownOverworld.Instance> {
 
     public static final Identifier ID =
-            Identifier.fromNamespaceAndPath(NetheriteAscension.MOD_ID, "altar_star_nether_trigger");
+            Identifier.fromNamespaceAndPath(NetheriteAscension.MOD_ID, "altar_star_1");
 
-    public static final AltarStarThrownNetherSubAchievementTrigger INSTANCE = new AltarStarThrownNetherSubAchievementTrigger();
+    public static final AltarStarThrownOverworld INSTANCE = new AltarStarThrownOverworld();
 
     // ✅ REQUIRED in modern versions
     public static final Codec<Instance> CODEC = RecordCodecBuilder.create(instance ->

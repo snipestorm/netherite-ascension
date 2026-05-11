@@ -20,8 +20,7 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jspecify.annotations.Nullable;
 
-public class ObsidianAltarBlock extends BaseEntityBlock {
-    public static final VoxelShape SHAPE = Block.box(2,0,2,14,16,14);
+public class ObsidianAltarBlock extends AltarBlock {
     public static final MapCodec<ObsidianAltarBlock> CODEC = simpleCodec(ObsidianAltarBlock::new);
 
     public ObsidianAltarBlock(Properties properties) {
@@ -34,45 +33,8 @@ public class ObsidianAltarBlock extends BaseEntityBlock {
     }
 
     @Override
-    protected VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-        return SHAPE;
-    }
-
-    @Override
     public @Nullable BlockEntity newBlockEntity(BlockPos worldPosition, BlockState blockState) {
         return new ObsidianAltarBlockEntity (worldPosition, blockState);
     }
 
-    @Override
-    public void playerDestroy(Level level, Player player, BlockPos pos, BlockState state, @Nullable BlockEntity blockEntity, ItemStack destroyedWith) {
-        if (level.getBlockEntity(pos) instanceof ObsidianAltarBlockEntity ritualAltarBlockEntity) {
-            ritualAltarBlockEntity.drops();
-            level.updateNeighbourForOutputSignal(pos, this);
-        }
-        super.playerDestroy(level, player, pos, state, blockEntity, destroyedWith);
-    }
-
-    @Override
-    protected InteractionResult useItemOn(ItemStack itemStack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
-
-        if (level.getBlockEntity(pos) instanceof ObsidianAltarBlockEntity ritualAltarBlockEntity) {
-            boolean isAltarEmpty = ritualAltarBlockEntity.isEmpty();
-
-            if(isAltarEmpty && !itemStack.isEmpty()) {
-                ritualAltarBlockEntity.setTheItem(itemStack);
-                itemStack.shrink(1);
-                level.playSound(player,pos, SoundEvents.ITEM_PICKUP, SoundSource.BLOCKS,1f,2f);
-            } else if  (!isAltarEmpty) {
-                ItemStack stackOnAltar = ritualAltarBlockEntity.getTheItem();
-                ritualAltarBlockEntity.clearContent();
-
-                if (!player.getInventory().add(stackOnAltar)) {
-                    player.drop(stackOnAltar, false);
-                }
-                level.playSound(player,pos, SoundEvents.ITEM_PICKUP, SoundSource.BLOCKS,1f,1f);
-            }
-        }
-        return InteractionResult.SUCCESS;
-
-    }
 }

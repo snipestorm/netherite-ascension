@@ -105,6 +105,8 @@ public class DivineAltarBlock extends Block {
             level.setBlock(targetPos, ModBlocks.OBSIDIAN_ALTAR.defaultBlockState(), 3);
         }
     }
+
+
     // ⏱ progression tick
     @Override
     public void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {

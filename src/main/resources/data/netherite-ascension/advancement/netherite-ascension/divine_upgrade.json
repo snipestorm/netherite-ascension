@@ -1,0 +1,32 @@
+{
+  "parent": "netherite-ascension:netherite-ascension/altar_star_used_on_altar",
+  "criteria": {
+    "divine": {
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "divine"
+    ]
+  ],
+  "rewards": {
+    "experience" : 1000
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.netherite-ascension.divine_upgrade.description"
+    },
+    "icon": {
+      "id": "netherite-ascension:divine_netherite_ingot"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.netherite-ascension.divine_upgrade.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

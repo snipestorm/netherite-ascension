@@ -1,0 +1,30 @@
+{
+  "parent": "netherite-ascension:netherite-ascension/altar_star_used_on_altar",
+  "criteria": {
+    "craft": {
+      "trigger": "netherite-ascension:altar_crafting"
+    }
+  },
+  "requirements": [
+    [
+      "craft"
+    ]
+  ],
+  "rewards": {},
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.netherite-ascension.altar_crafting.description"
+    },
+    "icon": {
+      "id": "netherite-ascension:ritual_altar"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.netherite-ascension.altar_crafting.title"
+    }
+  },
+  "sends_telemetry_event": true
+}
