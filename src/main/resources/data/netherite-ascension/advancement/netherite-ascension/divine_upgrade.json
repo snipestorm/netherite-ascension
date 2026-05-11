@@ -1,7 +1,14 @@
 {
-  "parent": "netherite-ascension:netherite-ascension/altar_star_used_on_altar",
+  "parent": "netherite-ascension:netherite-ascension/kill_warden",
   "criteria": {
     "divine": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#netherite-ascension:divine_netherite_craftables"
+          }
+        ]
+      },
       "trigger": "minecraft:inventory_changed"
     }
   },
@@ -22,7 +29,7 @@
       "id": "netherite-ascension:divine_netherite_ingot"
     },
     "frame": "challenge",
-    "hidden": false,
+    "hidden": true,
     "show_toast": true,
     "title": {
       "translate": "advancements.netherite-ascension.divine_upgrade.title"

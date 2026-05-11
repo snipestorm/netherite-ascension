@@ -30,6 +30,16 @@ public class ModItemTagProvider extends FabricTagsProvider.ItemTagsProvider {
         valueLookupBuilder(ItemTags.HOES).add(ModItems.DIVINE_NETHERITE_HOE);
         valueLookupBuilder(ItemTags.SPEARS).add(ModItems.DIVINE_NETHERITE_SPEAR);
 
+        valueLookupBuilder(ItemTags.HEAD_ARMOR)
+        .add(ModItems.DIVINE_NETHERITE_HELMET);
+        valueLookupBuilder(ItemTags.CHEST_ARMOR)
+        .add(ModItems.DIVINE_NETHERITE_CHESTPLATE);
+        valueLookupBuilder(ItemTags.LEG_ARMOR)
+        .add(ModItems.DIVINE_NETHERITE_LEGGINGS);
+        valueLookupBuilder(ItemTags.FOOT_ARMOR)
+        .add(ModItems.DIVINE_NETHERITE_BOOTS);
+
+
         valueLookupBuilder(ModTags.Items.DIVINE_NETHERITE_REPAIRABLE)
                 .add(ModItems.DIVINE_NETHERITE_INGOT);
 

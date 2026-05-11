@@ -23,13 +23,15 @@ public class ModBlockTagProvider extends FabricTagsProvider.BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider registries) {
         valueLookupBuilder(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.DIVINE_NETHERITE_BLOCK);
+                .add(ModBlocks.DIVINE_NETHERITE_BLOCK)
+                        .add(ModBlocks.DIVINE_ALTAR);
 
         valueLookupBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.DIVINE_NETHERITE_BLOCK);
 
         valueLookupBuilder(ModTags.Blocks.NEEDS_DIVINE_NETHERITE_TOOL)
-            .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+            .addTag(BlockTags.NEEDS_DIAMOND_TOOL)
+            .add(ModBlocks.DIVINE_ALTAR);
         valueLookupBuilder(ModTags.Blocks.INCORRECT_FOR_DIVINE_NETHERITE_TOOL)
                 .addOptionalTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL);
 

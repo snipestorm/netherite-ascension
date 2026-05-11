@@ -21,7 +21,7 @@ import java.util.function.Function;
 
 public class ModBlocks {
 
-    public static final Block DIVINE_ALTAR = registerBlock("divine_altar", properties -> new DivineAltarBlock(properties.strength(55f,12000f).sound(SoundType.DEEPSLATE).lightLevel(blockstate -> blockstate.getValue(BlockStateProperties.LIT) ? 15 : 5)));
+    public static final Block DIVINE_ALTAR = registerBlock("divine_altar", properties -> new DivineAltarBlock(properties.strength(50.0F,1200.0F).sound(SoundType.DEEPSLATE).lightLevel(blockstate -> blockstate.getValue(BlockStateProperties.LIT) ? 15 : 5).requiresCorrectToolForDrops()));
     public static final Block OBSIDIAN_ALTAR = registerBlock("obsidian_altar", properties -> new ObsidianAltarBlock(properties.strength(55f,12000f).sound(SoundType.DEEPSLATE).noOcclusion().noLootTable()));
     public static final Block RITUAL_ALTAR = registerBlock("ritual_altar", properties -> new RitualAltarBlock(properties.strength(55f,12000f).sound(SoundType.DEEPSLATE).noOcclusion().noLootTable()));
     public static final Block DIVINE_NETHERITE_BLOCK = registerBlock("divine_netherite_block", properties -> new Block(properties.mapColor(MapColor.COLOR_RED).requiresCorrectToolForDrops().strength(50f,1200F)));

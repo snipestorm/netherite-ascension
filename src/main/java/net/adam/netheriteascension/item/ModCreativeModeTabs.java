@@ -27,6 +27,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.DIVINE_NETHERITE_SHOVEL);
                         output.accept(ModItems.DIVINE_NETHERITE_SWORD);
                         output.accept(ModItems.DIVINE_NETHERITE_SPEAR);
+                        output.accept(ModItems.DIVINE_NETHERITE_HELMET);
+                        output.accept(ModItems.DIVINE_NETHERITE_CHESTPLATE);
+                        output.accept(ModItems.DIVINE_NETHERITE_LEGGINGS);
+                        output.accept(ModItems.DIVINE_NETHERITE_BOOTS);
+                        output.accept(ModItems.DIVINE_NETHERITE_NAUTILUS_ARMOR);
                         output.accept(ModBlocks.DIVINE_ALTAR);
                         output.accept(ModBlocks.OBSIDIAN_ALTAR);
                         output.accept(ModBlocks.RITUAL_ALTAR);

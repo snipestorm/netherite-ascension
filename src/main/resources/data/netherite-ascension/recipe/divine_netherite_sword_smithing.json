@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "#netherite-ascension:divine_netherite_tool_materials",
+  "base": "minecraft:netherite_sword",
+  "result": {
+    "id": "netherite-ascension:divine_netherite_sword"
+  },
+  "template": "netherite-ascension:divine_netherite_upgrade_smithing_template"
+}

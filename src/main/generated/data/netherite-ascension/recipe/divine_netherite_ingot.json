@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "netherite-ascension:divine_netherite_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "netherite-ascension:divine_netherite_ingot"
+  }
+}

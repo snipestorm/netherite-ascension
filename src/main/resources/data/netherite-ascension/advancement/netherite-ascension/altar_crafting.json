@@ -20,7 +20,7 @@
       "id": "netherite-ascension:ritual_altar"
     },
     "frame": "challenge",
-    "hidden": false,
+    "hidden": true,
     "show_toast": true,
     "title": {
       "translate": "advancements.netherite-ascension.altar_crafting.title"

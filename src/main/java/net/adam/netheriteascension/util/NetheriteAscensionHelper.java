@@ -10,6 +10,7 @@ import net.adam.netheriteascension.item.ModItems;
 import net.adam.netheriteascension.networking.ModPackets;
 import net.adam.netheriteascension.recipe.ModRecipes;
 import net.adam.netheriteascension.structure.ModStructures;
+import net.adam.netheriteascension.util.loot.ModLootTableModifiers;
 import net.adam.netheriteascension.util.renderers.ModRenderers;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
@@ -40,6 +41,7 @@ public class NetheriteAscensionHelper {
         ModRenderers.load();
         ModCreativeModeTabs.load();
         ModAdvancements.load();
+        ModLootTableModifiers.load();
     }
 
 

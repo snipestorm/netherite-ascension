@@ -1,0 +1,18 @@
+{
+  "type": "netherite-ascension:altar_crafting",
+  "ingredients": [
+    "netherite-ascension:altar_star",
+
+    "minecraft:deepslate_diamond_ore",
+    "minecraft:deepslate_diamond_ore",
+    "minecraft:deepslate_diamond_ore",
+    "minecraft:deepslate_diamond_ore",
+    "minecraft:deepslate_diamond_ore",
+    "minecraft:deepslate_diamond_ore",
+    "minecraft:deepslate_diamond_ore",
+    "minecraft:deepslate_diamond_ore"
+  ],
+  "result": {
+    "id": "netherite-ascension:divine_altar"
+  }
+}

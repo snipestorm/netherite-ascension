@@ -1,0 +1,45 @@
+{
+  "parent": "netherite-ascension:netherite-ascension/divine_upgrade",
+  "criteria": {
+    "divine_netherite_armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": "netherite-ascension:divine_netherite_helmet"
+          },
+          {
+            "items": "netherite-ascension:divine_netherite_chestplate"
+          },
+          {
+            "items": "netherite-ascension:divine_netherite_leggings"
+          },
+          {
+            "items": "netherite-ascension:divine_netherite_boots"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.netherite-ascension.divine_netherite_armor.description"
+    },
+    "frame": "challenge",
+    "icon": {
+      "id": "netherite-ascension:divine_netherite_chestplate"
+    },
+    "title": {
+      "translate": "advancements.netherite-ascension.divine_netherite_armor.title"
+    }
+  },
+  "requirements": [
+    [
+      "divine_netherite_armor"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

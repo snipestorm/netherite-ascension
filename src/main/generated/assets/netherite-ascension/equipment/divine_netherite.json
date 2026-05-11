@@ -1,0 +1,24 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "netherite-ascension:divine_netherite"
+      }
+    ],
+    "humanoid_baby": [
+      {
+        "texture": "netherite-ascension:divine_netherite"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "netherite-ascension:divine_netherite"
+      }
+    ],
+    "nautilus_body": [
+      {
+        "texture": "netherite-ascension:divine_netherite"
+      }
+    ]
+  }
+}

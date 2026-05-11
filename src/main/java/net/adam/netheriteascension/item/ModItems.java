@@ -8,6 +8,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.equipment.ArmorType;
 
 import java.util.function.Function;
 
@@ -25,6 +26,13 @@ public class ModItems {
     public static final Item DIVINE_NETHERITE_AXE = registerItem("divine_netherite_axe", properties -> new AxeItem(ModToolMaterials.DIVINE_NETHERITE,6,-3.2f,properties.rarity(Rarity.EPIC)));
     public static final Item DIVINE_NETHERITE_HOE = registerItem("divine_netherite_hoe", properties -> new HoeItem(ModToolMaterials.DIVINE_NETHERITE,0,-3f,properties.rarity(Rarity.EPIC)));
     public static final Item DIVINE_NETHERITE_SPEAR = registerItem("divine_netherite_spear", properties -> new Item(properties.spear(ModToolMaterials.DIVINE_NETHERITE,1.25F,1.375F,0.3F,2.0f,8.0F,4.5F,5.1F,7F,4.6F).fireResistant().rarity(Rarity.EPIC)));
+
+    public static final Item DIVINE_NETHERITE_HELMET =registerItem("divine_netherite_helmet", properties -> new Item(properties.humanoidArmor(ModArmorMaterials.DIVINE_NETHERITE_ARMOR_MATERIAL, ArmorType.HELMET).rarity(Rarity.EPIC)));
+    public static final Item DIVINE_NETHERITE_CHESTPLATE =registerItem("divine_netherite_chestplate", properties -> new Item(properties.humanoidArmor(ModArmorMaterials.DIVINE_NETHERITE_ARMOR_MATERIAL, ArmorType.CHESTPLATE).rarity(Rarity.EPIC)));
+    public static final Item DIVINE_NETHERITE_LEGGINGS =registerItem("divine_netherite_leggings", properties -> new Item(properties.humanoidArmor(ModArmorMaterials.DIVINE_NETHERITE_ARMOR_MATERIAL, ArmorType.LEGGINGS).rarity(Rarity.EPIC)));
+    public static final Item DIVINE_NETHERITE_BOOTS =registerItem("divine_netherite_boots", properties -> new Item(properties.humanoidArmor(ModArmorMaterials.DIVINE_NETHERITE_ARMOR_MATERIAL, ArmorType.BOOTS).rarity(Rarity.EPIC)));
+
+    public static final Item DIVINE_NETHERITE_NAUTILUS_ARMOR = registerItem("divine_netherite_nautilus_armor", properties -> new Item(properties.nautilusArmor(ModArmorMaterials.DIVINE_NETHERITE_ARMOR_MATERIAL).rarity(Rarity.EPIC)));
 
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {
         return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(NetheriteAscension.MOD_ID, name),

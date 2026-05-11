@@ -45,6 +45,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .save(output);
 
                 copySmithingTemplate(ModItems.DIVINE_NETHERITE_UPGRADE_SMITHING_TEMPLATE, Items.DIAMOND);
+                nineBlockStorageRecipes(RecipeCategory.BUILDING_BLOCKS,ModItems.DIVINE_NETHERITE_INGOT,RecipeCategory.BUILDING_BLOCKS,ModBlocks.DIVINE_NETHERITE_BLOCK);
             }
         };
     }

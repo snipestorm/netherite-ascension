@@ -1,5 +1,6 @@
 {
   "values": [
-    "#minecraft:needs_diamond_tool"
+    "#minecraft:needs_diamond_tool",
+    "netherite-ascension:divine_altar"
   ]
 }

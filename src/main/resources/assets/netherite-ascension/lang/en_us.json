@@ -2,12 +2,20 @@
   "item.netherite-ascension.divine_netherite_ingot": "Divine Netherite Ingot",
   "item.netherite-ascension.divine_netherite_upgrade_smithing_template": "Divine Netherite Upgrade Smithing Template",
   "item.netherite-ascension.altar_star": "Altar Star",
+
   "item.netherite-ascension.divine_netherite_sword": "Divine Netherite Sword",
   "item.netherite-ascension.divine_netherite_spear": "Divine Netherite Spear",
   "item.netherite-ascension.divine_netherite_pickaxe": "Divine Netherite Pickaxe",
   "item.netherite-ascension.divine_netherite_axe": "Divine Netherite Axe",
   "item.netherite-ascension.divine_netherite_shovel": "Divine Netherite Shovel",
   "item.netherite-ascension.divine_netherite_hoe": "Divine Netherite Hoe",
+
+  "item.netherite-ascension.divine_netherite_helmet": "Divine Netherite Helmet",
+  "item.netherite-ascension.divine_netherite_chestplate": "Divine Netherite Chestplate",
+  "item.netherite-ascension.divine_netherite_leggings": "Divine Netherite Leggings",
+  "item.netherite-ascension.divine_netherite_boots": "Divine Netherite Boots",
+
+  "item.netherite-ascension.divine_netherite_nautilus_armor": "Divine Netherite Nautilus Armor",
 
   "block.netherite-ascension.divine_netherite_block": "Divine Netherite Block",
   "block.netherite-ascension.divine_altar": "Divine Altar",
@@ -42,9 +50,13 @@
   "advancements.netherite-ascension.found_altar.title" : "A Strange Dark Tower",
   "advancements.netherite-ascension.found_altar.description" : "How Is It Floating?",
   "advancements.netherite-ascension.altar_star_used_on_altar.title" : "An Unusual Altar",
-  "advancements.netherite-ascension.altar_star_used_on_altar.description": "I Should Place My Star On It",
+  "advancements.netherite-ascension.altar_star_used_on_altar.description": "It Looks Like It Needs Activating...",
   "advancements.netherite-ascension.altar_crafting.title" : "Altar Crafter",
-  "advancements.netherite-ascension.altar_crafting.description": "Complete An Altar Craft",
+  "advancements.netherite-ascension.altar_crafting.description": "Completed An Altar Craft",
   "advancements.netherite-ascension.divine_upgrade.title" : "Its Divine!",
-  "advancements.netherite-ascension.divine_upgrade.description": "Upgrade A Piece Of Netherite Equipment Or Armour To Divine Netherite"
+  "advancements.netherite-ascension.divine_upgrade.description": "Upgrade A Piece Of Netherite Equipment Or Armor To Divine Netherite",
+  "advancements.netherite-ascension.divine_netherite_armor.title": "Cover Me In Godly Debris!",
+  "advancements.netherite-ascension.divine_netherite_armor.description" : "Wear A Full Set Of Divine Netherite Armor",
+  "advancements.netherite-ascension.nautilus_upgrade.title": "The King Of Nautilus",
+  "advancements.netherite-ascension.nautilus_upgrade.description": "Upgrade A Netherite Nautilus Armor To Divine Netherite"
 }

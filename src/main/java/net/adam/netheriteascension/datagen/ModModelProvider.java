@@ -1,6 +1,7 @@
 package net.adam.netheriteascension.datagen;
 
 import net.adam.netheriteascension.block.ModBlocks;
+import net.adam.netheriteascension.item.ModArmorMaterials;
 import net.adam.netheriteascension.item.ModItems;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
@@ -37,6 +38,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModItems.DIVINE_NETHERITE_SHOVEL, ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.DIVINE_NETHERITE_SPEAR, ModelTemplates.FLAT_HANDHELD_ITEM);
 
+        itemModelGenerators.generateFlatItem(ModItems.DIVINE_NETHERITE_NAUTILUS_ARMOR, ModelTemplates.FLAT_ITEM);
 
+        itemModelGenerators.generateTrimmableItem(ModItems.DIVINE_NETHERITE_HELMET, ModArmorMaterials.DIVINE_NETHERITE_KEY, ItemModelGenerators.TRIM_PREFIX_HELMET,false);
+        itemModelGenerators.generateTrimmableItem(ModItems.DIVINE_NETHERITE_CHESTPLATE, ModArmorMaterials.DIVINE_NETHERITE_KEY, ItemModelGenerators.TRIM_PREFIX_CHESTPLATE,false);
+        itemModelGenerators.generateTrimmableItem(ModItems.DIVINE_NETHERITE_LEGGINGS, ModArmorMaterials.DIVINE_NETHERITE_KEY, ItemModelGenerators.TRIM_PREFIX_LEGGINGS,false);
+        itemModelGenerators.generateTrimmableItem(ModItems.DIVINE_NETHERITE_BOOTS, ModArmorMaterials.DIVINE_NETHERITE_KEY, ItemModelGenerators.TRIM_PREFIX_BOOTS,false);
     }
 }
