@@ -40,6 +40,8 @@ public class ModItemTagProvider extends FabricTagsProvider.ItemTagsProvider {
         .add(ModItems.DIVINE_NETHERITE_BOOTS);
 
 
+
+
         valueLookupBuilder(ModTags.Items.DIVINE_NETHERITE_REPAIRABLE)
                 .add(ModItems.DIVINE_NETHERITE_INGOT);
 

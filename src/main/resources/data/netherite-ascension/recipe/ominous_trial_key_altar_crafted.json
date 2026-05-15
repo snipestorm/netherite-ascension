@@ -1,0 +1,19 @@
+{
+  "type": "netherite-ascension:altar_crafting",
+  "ingredients": [
+    "minecraft:trial_key",
+
+    "minecraft:ominous_bottle",
+    "minecraft:ominous_bottle",
+    "minecraft:ominous_bottle",
+    "minecraft:ominous_bottle",
+    "minecraft:ominous_bottle",
+    "minecraft:ominous_bottle",
+    "minecraft:ominous_bottle",
+    "minecraft:ominous_bottle"
+
+  ],
+  "result": {
+    "id": "minecraft:ominous_trial_key"
+  }
+}

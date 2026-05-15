@@ -19,8 +19,10 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.storage.ValueInput;
 import net.minecraft.world.level.storage.ValueOutput;
 import net.minecraft.world.ticks.ContainerSingleItem;
+import org.joml.Vector3i;
 import org.jspecify.annotations.Nullable;
 
+import java.util.List;
 import java.util.UUID;
 
 public abstract class AltarBlockEntity extends BlockEntity implements ContainerSingleItem.BlockContainerSingleItem {
@@ -34,6 +36,22 @@ public abstract class AltarBlockEntity extends BlockEntity implements ContainerS
     public  boolean craftingActive = false;
     public boolean hadCraftedItemLastTick = false;
     public boolean craftingComplete = false;
+
+
+
+
+    List<Vector3i> offsets = List.of(
+            new Vector3i(4, 0, 0),
+            new Vector3i(3, 0, 3),
+            new Vector3i(0, 0, 4),
+            new Vector3i(-3, 0, 3),
+
+            new Vector3i(-4, 0, 0),
+            new Vector3i(-3, 0, -3),
+            new Vector3i(0, 0, -4),
+            new Vector3i(3, 0, -3));
+
+
 
     @Nullable
     private UUID lastInteractingPlayer;

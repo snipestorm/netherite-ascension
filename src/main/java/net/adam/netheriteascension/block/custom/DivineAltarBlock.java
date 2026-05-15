@@ -50,8 +50,8 @@ public class DivineAltarBlock extends Block {
             new Vector3i(3, 0, -3),
 
             new Vector3i(-3, 0, 3),
-            new Vector3i(-3, 0, -3),
             new Vector3i(0, 0, -4),
+            new Vector3i(-3, 0, -3),
             new Vector3i(-4, 0, 0));
 
 

@@ -1,0 +1,19 @@
+{
+  "type": "netherite-ascension:altar_crafting",
+  "ingredients": [
+    "minecraft:ominous_bottle",
+
+    "minecraft:emerald",
+    "minecraft:gold_ingot",
+    "minecraft:emerald",
+    "minecraft:gold_ingot",
+    "minecraft:emerald",
+    "minecraft:gold_ingot",
+    "minecraft:emerald",
+    "minecraft:gold_ingot"
+
+  ],
+  "result": {
+    "id": "minecraft:totem_of_undying"
+  }
+}

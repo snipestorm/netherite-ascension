@@ -38,7 +38,15 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModItems.DIVINE_NETHERITE_SHOVEL, ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.DIVINE_NETHERITE_SPEAR, ModelTemplates.FLAT_HANDHELD_ITEM);
 
+        itemModelGenerators.generateElytra(ModItems.DIVINE_NETHERITE_ELYTRA);
+
         itemModelGenerators.generateFlatItem(ModItems.DIVINE_NETHERITE_NAUTILUS_ARMOR, ModelTemplates.FLAT_ITEM);
+
+        itemModelGenerators.generateFlatItem(ModItems.DIVINE_NETHERITE_INGOT_RECIPE_ITEM, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.DIVINE_NETHERITE_ELYTRA_RECIPE_ITEM, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.ENCHANTED_GOLDEN_APPLE_RECIPE_ITEM, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.TOTEM_OF_UNDYING_RECIPE_ITEM, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.OMINOUS_TRIAL_KEY_RECIPE_ITEM, ModelTemplates.FLAT_ITEM);
 
         itemModelGenerators.generateTrimmableItem(ModItems.DIVINE_NETHERITE_HELMET, ModArmorMaterials.DIVINE_NETHERITE_KEY, ItemModelGenerators.TRIM_PREFIX_HELMET,false);
         itemModelGenerators.generateTrimmableItem(ModItems.DIVINE_NETHERITE_CHESTPLATE, ModArmorMaterials.DIVINE_NETHERITE_KEY, ItemModelGenerators.TRIM_PREFIX_CHESTPLATE,false);

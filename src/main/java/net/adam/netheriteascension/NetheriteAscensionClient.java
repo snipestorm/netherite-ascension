@@ -4,6 +4,10 @@ import net.adam.netheriteascension.block.entity.ModBlockEntities;
 import net.adam.netheriteascension.block.entity.renderer.ObsidianAlterBlockEntityRenderer;
 import net.adam.netheriteascension.block.entity.renderer.AlterBlockEntityRenderer;
 import net.adam.netheriteascension.block.entity.renderer.RitualAlterBlockEntityRenderer;
+import net.adam.netheriteascension.networking.BoostKeyHandler;
+import net.adam.netheriteascension.util.NetheriteAscensionClientHelper;
+import net.adam.netheriteascension.util.keybinds.ModKeybinds;
+import net.adam.netheriteascension.util.renderers.ModRenderers;
 import net.fabricmc.api.ClientModInitializer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 
@@ -13,9 +17,7 @@ public class NetheriteAscensionClient implements ClientModInitializer {
      */
     @Override
     public void onInitializeClient() {
-
-        BlockEntityRenderers.register(ModBlockEntities.RITUAL_ALTAR_BE, RitualAlterBlockEntityRenderer::new);
-        BlockEntityRenderers.register(ModBlockEntities.OBSIDIAN_ALTAR_BE, ObsidianAlterBlockEntityRenderer::new);
-
+        NetheriteAscension.LOGGER.info("Loading Netherite Ascension Client");
+        NetheriteAscensionClientHelper.loadAllClientRegistries();
     }
 }

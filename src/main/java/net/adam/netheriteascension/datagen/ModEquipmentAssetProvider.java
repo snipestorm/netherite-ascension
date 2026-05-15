@@ -28,6 +28,7 @@ public class ModEquipmentAssetProvider implements DataProvider {
                 EquipmentClientInfo.builder()
                         .addHumanoidLayers(Identifier.fromNamespaceAndPath(NetheriteAscension.MOD_ID, "divine_netherite"))
                         .addLayers(EquipmentClientInfo.LayerType.NAUTILUS_BODY,new EquipmentClientInfo.Layer(Identifier.fromNamespaceAndPath(NetheriteAscension.MOD_ID, "divine_netherite")))
+                      // .addLayers(EquipmentClientInfo.LayerType.WINGS, new EquipmentClientInfo.Layer(Identifier.fromNamespaceAndPath(NetheriteAscension.MOD_ID, "divine_netherite_wings")))
                         .build());
     }
 

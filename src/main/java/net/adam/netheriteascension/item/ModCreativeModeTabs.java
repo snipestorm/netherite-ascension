@@ -20,7 +20,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.DIVINE_NETHERITE_INGOT);
                         output.accept(ModBlocks.DIVINE_NETHERITE_BLOCK);
                         output.accept(ModItems.DIVINE_NETHERITE_UPGRADE_SMITHING_TEMPLATE);
-                        output.accept(ModItems.ALTAR_STAR);
                         output.accept(ModItems.DIVINE_NETHERITE_AXE);
                         output.accept(ModItems.DIVINE_NETHERITE_PICKAXE);
                         output.accept(ModItems.DIVINE_NETHERITE_HOE);
@@ -31,10 +30,17 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.DIVINE_NETHERITE_CHESTPLATE);
                         output.accept(ModItems.DIVINE_NETHERITE_LEGGINGS);
                         output.accept(ModItems.DIVINE_NETHERITE_BOOTS);
+                        output.accept(ModItems.DIVINE_NETHERITE_ELYTRA);
                         output.accept(ModItems.DIVINE_NETHERITE_NAUTILUS_ARMOR);
+                        output.accept(ModItems.DIVINE_NETHERITE_INGOT_RECIPE_ITEM);
+                        output.accept(ModItems.DIVINE_NETHERITE_ELYTRA_RECIPE_ITEM);
+                        output.accept(ModItems.ENCHANTED_GOLDEN_APPLE_RECIPE_ITEM);
+                        output.accept(ModItems.TOTEM_OF_UNDYING_RECIPE_ITEM);
+                        output.accept(ModItems.OMINOUS_TRIAL_KEY_RECIPE_ITEM);
                         output.accept(ModBlocks.DIVINE_ALTAR);
                         output.accept(ModBlocks.OBSIDIAN_ALTAR);
                         output.accept(ModBlocks.RITUAL_ALTAR);
+                        output.accept(ModItems.ALTAR_STAR);
                     }).build());
 
 

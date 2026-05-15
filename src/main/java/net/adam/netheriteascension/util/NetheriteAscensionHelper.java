@@ -11,9 +11,9 @@ import net.adam.netheriteascension.networking.ModPackets;
 import net.adam.netheriteascension.recipe.ModRecipes;
 import net.adam.netheriteascension.structure.ModStructures;
 import net.adam.netheriteascension.util.loot.ModLootTableModifiers;
-import net.adam.netheriteascension.util.renderers.ModRenderers;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.levelgen.structure.Structure;
 
@@ -38,11 +38,10 @@ public class NetheriteAscensionHelper {
     public static void loadAllUtilities() {
         NetheriteAscension.LOGGER.info("Registering Netherite Ascension Utilities!");
         ModPackets.loadPackets();
-        ModRenderers.load();
         ModCreativeModeTabs.load();
         ModAdvancements.load();
         ModLootTableModifiers.load();
+        GameRuleOverride.load();
     }
-
 
 }

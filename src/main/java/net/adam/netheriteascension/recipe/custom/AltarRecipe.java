@@ -17,9 +17,9 @@ import java.util.List;
 public record AltarRecipe(List<Ingredient> ingredients, ItemStackTemplate output) implements Recipe<AltarRecipeInput> {
 
 
-    public static final MapCodec<AltarRecipe> CODEC = RecordCodecBuilder.mapCodec(altarRecipeInstance -> altarRecipeInstance.group(
+    public static final MapCodec<AltarRecipe> CODEC = RecordCodecBuilder.mapCodec(inst -> inst.group(
             Ingredient.CODEC.listOf().fieldOf("ingredients").forGetter(AltarRecipe::ingredients),
-            ItemStackTemplate.CODEC.fieldOf("result").forGetter(AltarRecipe::output)).apply(altarRecipeInstance, AltarRecipe::new));
+            ItemStackTemplate.CODEC.fieldOf("result").forGetter(AltarRecipe::output)).apply(inst, AltarRecipe::new));
 
     public static final StreamCodec<RegistryFriendlyByteBuf, AltarRecipe> STREAM_CODEC =
             StreamCodec.composite(Ingredient.CONTENTS_STREAM_CODEC.apply(ByteBufCodecs.list()), AltarRecipe::ingredients,

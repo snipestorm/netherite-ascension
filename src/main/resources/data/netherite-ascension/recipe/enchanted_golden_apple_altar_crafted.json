@@ -1,0 +1,18 @@
+{
+  "type": "netherite-ascension:altar_crafting",
+  "ingredients": [
+    "minecraft:golden_apple",
+
+    "minecraft:gold_block",
+    "minecraft:gold_block",
+    "minecraft:gold_block",
+    "minecraft:gold_block",
+    "minecraft:gold_block",
+    "minecraft:gold_block",
+    "minecraft:gold_block",
+    "minecraft:gold_block"
+  ],
+  "result": {
+    "id": "minecraft:enchanted_golden_apple"
+  }
+}

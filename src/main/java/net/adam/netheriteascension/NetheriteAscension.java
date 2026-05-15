@@ -2,6 +2,8 @@ package net.adam.netheriteascension;
 
 import net.adam.netheriteascension.util.NetheriteAscensionHelper;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
+import net.minecraft.world.level.gamerules.GameRules;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,5 +17,7 @@ public class NetheriteAscension implements ModInitializer {
 		NetheriteAscensionHelper.initialiseMod();
 		NetheriteAscensionHelper.loadAllRegistries();
 		NetheriteAscensionHelper.loadAllUtilities();
+
+
 	}
 }

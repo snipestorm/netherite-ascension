@@ -9,6 +9,14 @@
   "item.netherite-ascension.divine_netherite_axe": "Divine Netherite Axe",
   "item.netherite-ascension.divine_netherite_shovel": "Divine Netherite Shovel",
   "item.netherite-ascension.divine_netherite_hoe": "Divine Netherite Hoe",
+  "item.netherite-ascension.divine_netherite_elytra": "Divine Netherite Elytra",
+  "item.netherite-ascension.divine_netherite_elytra_broken": "Broken Divine Netherite Elytra",
+
+  "item.netherite-ascension.divine_netherite_elytra_recipe_item" : "Altar Recipe: Divine Netherite Elytra",
+  "item.netherite-ascension.divine_netherite_ingot_recipe_item" : "Altar Recipe: Divine Netherite Ingot",
+  "item.netherite-ascension.enchanted_golden_apple_recipe_item" : "Altar Recipe: Enchanted Golden Apple",
+  "item.netherite-ascension.totem_of_undying_recipe_item" : "Altar Recipe: Totem Of Undying",
+  "item.netherite-ascension.ominous_trial_key_recipe_item" : "Altar Recipe: Ominous Trial Key",
 
   "item.netherite-ascension.divine_netherite_helmet": "Divine Netherite Helmet",
   "item.netherite-ascension.divine_netherite_chestplate": "Divine Netherite Chestplate",
@@ -26,6 +34,11 @@
 
   "tooltip.netherite-ascension.altar_star" : "Press Shift For More Info",
   "tooltip.netherite-ascension.altar_star_launch" : "Right Click To Launch Me",
+  "tooltip.netherite-ascension.divine_elytra": "Press Shift To Reveal The Secret",
+  "tooltip.netherite-ascension.divine_elytra_shift": "Press Boost Button For A Boost!",
+  "tooltip.netherite-ascension.recipe_item": "Right Click To See Recipe",
+
+  "key.netherite-ascension.boost_key" : "Boost Key!",
 
 
 
@@ -58,5 +71,9 @@
   "advancements.netherite-ascension.divine_netherite_armor.title": "Cover Me In Godly Debris!",
   "advancements.netherite-ascension.divine_netherite_armor.description" : "Wear A Full Set Of Divine Netherite Armor",
   "advancements.netherite-ascension.nautilus_upgrade.title": "The King Of Nautilus",
-  "advancements.netherite-ascension.nautilus_upgrade.description": "Upgrade A Netherite Nautilus Armor To Divine Netherite"
+  "advancements.netherite-ascension.nautilus_upgrade.description": "Upgrade A Netherite Nautilus Armor To Divine Netherite",
+  "advancements.netherite-ascension.elytra_upgrade.title" : "Divine Wings",
+  "advancements.netherite-ascension.elytra_upgrade.description" : "Craft The Divine Netherite Elytra"
+
+
 }

@@ -1,0 +1,39 @@
+{
+  "parent": "netherite-ascension:netherite-ascension/divine_upgrade",
+  "criteria": {
+    "divine": {
+      "conditions": {
+        "items": [
+          {
+            "items": "netherite-ascension:divine_netherite_elytra"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "divine"
+    ]
+  ],
+  "rewards": {
+    "experience" : 1000
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.netherite-ascension.elytra_upgrade.description"
+    },
+    "icon": {
+      "id": "netherite-ascension:divine_netherite_elytra"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.netherite-ascension.elytra_upgrade.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

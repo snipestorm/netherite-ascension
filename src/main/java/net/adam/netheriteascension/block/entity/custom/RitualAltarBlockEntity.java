@@ -33,20 +33,6 @@ public class RitualAltarBlockEntity extends AltarBlockEntity {
 
 
 
-    List<Vector3i> offsets = List.of(
-            new Vector3i(4, 0, 0),
-            new Vector3i(3, 0, 3),
-            new Vector3i(0, 0, 4),
-            new Vector3i(3, 0, -3),
-
-            new Vector3i(-3, 0, 3),
-            new Vector3i(-3, 0, -3),
-            new Vector3i(0, 0, -4),
-            new Vector3i(-4, 0, 0));
-
-
-
-
     public RitualAltarBlockEntity(BlockPos worldPosition, BlockState blockState) {
         super(ModBlockEntities.RITUAL_ALTAR_BE, worldPosition, blockState);
     }
@@ -107,11 +93,13 @@ public class RitualAltarBlockEntity extends AltarBlockEntity {
             spawnVisualLightning(level, blockPos);
             spawnExplosionParticles((ServerLevel) level);
             playCraftSound(level, blockPos, random);
-            System.out.println("Divine Netherite Ingot Crafted! by" + getLastPlayer().getName().getString() );
+           System.out.println(this.inventory.get(0).getItem().getName(this.inventory.get(0)).getString() + " Crafted! by " + getLastPlayer().getName().getString() );
 
             craftingComplete = true;
             craftingActive = false;
-            ModAdvancements.altarCrafting((ServerPlayer) player);
+            if (getLastPlayer() != null) {
+                ModAdvancements.altarCrafting((ServerPlayer) player);
+            }
 
 
         } else {
