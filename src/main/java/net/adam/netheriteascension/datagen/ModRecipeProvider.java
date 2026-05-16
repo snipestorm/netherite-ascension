@@ -4,25 +4,13 @@ import net.adam.netheriteascension.block.ModBlocks;
 import net.adam.netheriteascension.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
-import net.minecraft.advancements.Criterion;
-import net.minecraft.advancements.criterion.InventoryChangeTrigger;
-import net.minecraft.advancements.criterion.ItemPredicate;
-import net.minecraft.core.HolderGetter;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.data.recipes.SmithingTransformRecipeBuilder;
-import net.minecraft.tags.ItemTags;
-import net.minecraft.tags.TagKey;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.crafting.Ingredient;
 
 import java.util.concurrent.CompletableFuture;
-
-import static net.minecraft.data.recipes.RecipeProvider.getItemName;
-import static net.minecraft.data.recipes.RecipeProvider.inventoryTrigger;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
 

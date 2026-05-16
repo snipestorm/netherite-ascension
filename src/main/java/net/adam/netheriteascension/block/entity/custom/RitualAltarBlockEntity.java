@@ -23,9 +23,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import org.joml.Vector3i;
-import org.jspecify.annotations.Nullable;
 
-import java.util.List;
 import java.util.Optional;
 
 public class RitualAltarBlockEntity extends AltarBlockEntity {

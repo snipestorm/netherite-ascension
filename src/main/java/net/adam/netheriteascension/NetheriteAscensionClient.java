@@ -1,15 +1,7 @@
 package net.adam.netheriteascension;
 
-import net.adam.netheriteascension.block.entity.ModBlockEntities;
-import net.adam.netheriteascension.block.entity.renderer.ObsidianAlterBlockEntityRenderer;
-import net.adam.netheriteascension.block.entity.renderer.AlterBlockEntityRenderer;
-import net.adam.netheriteascension.block.entity.renderer.RitualAlterBlockEntityRenderer;
-import net.adam.netheriteascension.networking.BoostKeyHandler;
 import net.adam.netheriteascension.util.NetheriteAscensionClientHelper;
-import net.adam.netheriteascension.util.keybinds.ModKeybinds;
-import net.adam.netheriteascension.util.renderers.ModRenderers;
 import net.fabricmc.api.ClientModInitializer;
-import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 
 public class NetheriteAscensionClient implements ClientModInitializer {
     /**

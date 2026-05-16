@@ -1,6 +1,5 @@
 package net.adam.netheriteascension.recipe.custom;
 
-import net.adam.netheriteascension.recipe.ModRecipes;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.RecipeInput;
 

@@ -3,7 +3,6 @@ package net.adam.netheriteascension.recipe.custom;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.adam.netheriteascension.recipe.ModRecipes;
-import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.network.codec.StreamCodec;

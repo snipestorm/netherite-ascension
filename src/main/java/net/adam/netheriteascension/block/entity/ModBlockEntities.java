@@ -3,7 +3,6 @@ package net.adam.netheriteascension.block.entity;
 import net.adam.netheriteascension.NetheriteAscension;
 import net.adam.netheriteascension.block.ModBlocks;
 import net.adam.netheriteascension.block.entity.custom.ObsidianAltarBlockEntity;
-import net.adam.netheriteascension.block.entity.custom.AltarBlockEntity;
 import net.adam.netheriteascension.block.entity.custom.RitualAltarBlockEntity;
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 import net.minecraft.core.Registry;
