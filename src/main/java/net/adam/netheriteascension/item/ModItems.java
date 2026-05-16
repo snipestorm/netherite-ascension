@@ -1,13 +1,11 @@
 package net.adam.netheriteascension.item;
 
 import net.adam.netheriteascension.NetheriteAscension;
-import net.adam.netheriteascension.datagen.ModEquipmentAssetProvider;
 import net.adam.netheriteascension.item.custom.AltarRecipeItem;
 import net.adam.netheriteascension.item.custom.AltarStarItem;
 import net.adam.netheriteascension.item.custom.DivineNetheriteElytra;
 import net.adam.netheriteascension.util.renderers.ModEquipmentAssets;
 import net.minecraft.core.Registry;
-import net.minecraft.core.component.DataComponentType;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -18,7 +16,6 @@ import net.minecraft.util.Unit;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.equipment.ArmorType;
-import net.minecraft.world.item.equipment.EquipmentAssets;
 import net.minecraft.world.item.equipment.Equippable;
 
 import java.util.function.Function;

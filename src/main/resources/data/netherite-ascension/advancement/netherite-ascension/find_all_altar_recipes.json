@@ -1,0 +1,79 @@
+{
+  "parent": "netherite-ascension:netherite-ascension/found_altar_recipe",
+  "criteria": {
+    "apple": {
+      "conditions": {
+        "items": [
+          {
+            "items": "netherite-ascension:enchanted_golden_apple_recipe_item"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "elytra": {
+    "conditions": {
+      "items": [
+        {
+          "items": "netherite-ascension:divine_netherite_elytra_recipe_item"
+        }
+      ]
+    },
+    "trigger": "minecraft:inventory_changed"
+  },
+  "ingot": {
+    "conditions": {
+      "items": [
+        {
+          "items": "netherite-ascension:divine_netherite_ingot_recipe_item"
+        }
+      ]
+    },
+    "trigger": "minecraft:inventory_changed"
+  },
+  "totem": {
+    "conditions": {
+      "items": [
+        {
+          "items": "netherite-ascension:totem_of_undying_recipe_item"
+        }
+      ]
+    },
+    "trigger": "minecraft:inventory_changed"
+  },
+  "key": {
+    "conditions": {
+      "items": [
+        {
+          "items": "netherite-ascension:ominous_trial_key_recipe_item"
+        }
+      ]
+    },
+    "trigger": "minecraft:inventory_changed"
+  },
+
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.netherite-ascension.found_all.description"
+    },
+    "icon": {
+      "id": "netherite-ascension:totem_of_undying_recipe_item"
+    },
+    "frame": "goal",
+    "hidden" : false,
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.netherite-ascension.found_all.title"
+    }
+  },
+  "requirements": [
+    ["apple"],
+    ["elytra"],
+    ["ingot"],
+    ["totem"],
+    ["key"]
+  ],
+  "sends_telemetry_event": true
+}

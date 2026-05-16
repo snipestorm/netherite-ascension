@@ -11,9 +11,9 @@ import net.adam.netheriteascension.networking.ModPackets;
 import net.adam.netheriteascension.recipe.ModRecipes;
 import net.adam.netheriteascension.structure.ModStructures;
 import net.adam.netheriteascension.util.loot.ModLootTableModifiers;
+import net.adam.netheriteascension.util.misc.GameRuleOverride;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
-import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.levelgen.structure.Structure;
 

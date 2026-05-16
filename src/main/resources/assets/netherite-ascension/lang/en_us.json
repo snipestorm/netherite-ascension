@@ -63,7 +63,7 @@
   "advancements.netherite-ascension.found_altar.title" : "A Strange Dark Tower",
   "advancements.netherite-ascension.found_altar.description" : "How Is It Floating?",
   "advancements.netherite-ascension.altar_star_used_on_altar.title" : "An Unusual Altar",
-  "advancements.netherite-ascension.altar_star_used_on_altar.description": "It Looks Like It Needs Activating...",
+  "advancements.netherite-ascension.altar_star_used_on_altar.description": "I Activated The Altar & A Ritual Begun",
   "advancements.netherite-ascension.altar_crafting.title" : "Altar Crafter",
   "advancements.netherite-ascension.altar_crafting.description": "Completed An Altar Craft",
   "advancements.netherite-ascension.divine_upgrade.title" : "Its Divine!",
@@ -73,7 +73,11 @@
   "advancements.netherite-ascension.nautilus_upgrade.title": "The King Of Nautilus",
   "advancements.netherite-ascension.nautilus_upgrade.description": "Upgrade A Netherite Nautilus Armor To Divine Netherite",
   "advancements.netherite-ascension.elytra_upgrade.title" : "Divine Wings",
-  "advancements.netherite-ascension.elytra_upgrade.description" : "Craft The Divine Netherite Elytra"
+  "advancements.netherite-ascension.elytra_upgrade.description" : "Craft The Divine Netherite Elytra",
+  "advancements.netherite-ascension.found_altar_recipe.title": "Find An Altar Recipe",
+  "advancements.netherite-ascension.found_altar_recipe.description" : "Find One Of The Altar Recipes",
+  "advancements.netherite-ascension.found_all.title" : "The Complete Set",
+  "advancements.netherite-ascension.found_all.description" : "Find All 5 Altar Recipes"
 
 
 }

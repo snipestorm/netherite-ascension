@@ -20,7 +20,7 @@
       "id": "netherite-ascension:divine_altar"
     },
     "frame": "challenge",
-    "hidden": false,
+    "hidden": true,
     "show_toast": true,
     "title": {
       "translate": "advancements.netherite-ascension.altar_star_used_on_altar.title"

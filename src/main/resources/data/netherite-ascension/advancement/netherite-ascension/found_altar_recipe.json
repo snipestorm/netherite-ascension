@@ -1,0 +1,38 @@
+{
+  "parent": "netherite-ascension:netherite-ascension/root",
+  "criteria": {
+    "divine": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#netherite-ascension:altar_recipes"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "divine"
+    ]
+  ],
+  "rewards": {
+    "experience" : 50
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.netherite-ascension.found_altar_recipe.description"
+    },
+    "icon": {
+      "id": "netherite-ascension:divine_netherite_ingot_recipe_item"
+    },
+    "hidden": true,
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.netherite-ascension.found_altar_recipe.title"
+    }
+  },
+  "sends_telemetry_event": true
+}
