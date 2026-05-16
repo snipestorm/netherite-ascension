@@ -50,7 +50,6 @@
         ]
       },
       "trigger": "minecraft:inventory_changed"
-    }
   },
   "display": {
     "announce_to_chat": true,
