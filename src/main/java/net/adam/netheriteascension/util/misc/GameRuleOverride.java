@@ -1,4 +1,4 @@
-package net.adam.netheriteascension.util;
+package net.adam.netheriteascension.util.misc;
 
 import net.adam.netheriteascension.NetheriteAscension;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;

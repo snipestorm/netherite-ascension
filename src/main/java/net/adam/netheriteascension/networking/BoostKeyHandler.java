@@ -1,7 +1,7 @@
 package net.adam.netheriteascension.networking;
 
 import net.adam.netheriteascension.item.ModItems;
-import net.adam.netheriteascension.util.BoostState;
+import net.adam.netheriteascension.util.misc.BoostState;
 import net.adam.netheriteascension.util.keybinds.ModKeybinds;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;

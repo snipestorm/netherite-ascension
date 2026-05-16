@@ -1,7 +1,7 @@
 package net.adam.netheriteascension.mixin;
 
 import net.adam.netheriteascension.item.ModItems;
-import net.adam.netheriteascension.util.BoostState;
+import net.adam.netheriteascension.util.misc.BoostState;
 import net.minecraft.client.DeltaTracker;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;

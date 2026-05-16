@@ -1,4 +1,4 @@
-package net.adam.netheriteascension.util;
+package net.adam.netheriteascension.util.misc;
 
 public class BoostState {
     public static float boostCharge = 0.0F;
