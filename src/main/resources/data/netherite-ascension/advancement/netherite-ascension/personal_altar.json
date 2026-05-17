@@ -1,0 +1,39 @@
+{
+  "parent": "netherite-ascension:netherite-ascension/altar_crafting",
+  "criteria": {
+    "divine": {
+      "conditions": {
+        "items": [
+          {
+            "items": "netherite-ascension:divine_altar"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "divine"
+    ]
+  ],
+  "rewards": {
+    "experience" : 200
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.netherite-ascension.personal_altar.description"
+    },
+    "icon": {
+      "id": "netherite-ascension:divine_altar"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.netherite-ascension.personal_altar.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

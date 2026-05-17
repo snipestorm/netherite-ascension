@@ -77,7 +77,9 @@
   "advancements.netherite-ascension.found_altar_recipe.title": "Find An Altar Recipe",
   "advancements.netherite-ascension.found_altar_recipe.description" : "Find One Of The Altar Recipes",
   "advancements.netherite-ascension.found_all.title" : "The Complete Set",
-  "advancements.netherite-ascension.found_all.description" : "Find All 5 Altar Recipes"
+  "advancements.netherite-ascension.found_all.description" : "Find All 5 Altar Recipes",
+  "advancements.netherite-ascension.personal_altar.title" : "Personal Altar",
+  "advancements.netherite-ascension.personal_altar.description" : "Craft A Divine Netherite Pickaxe, Mine And Pickup The Divine Altar"
 
 
 }
