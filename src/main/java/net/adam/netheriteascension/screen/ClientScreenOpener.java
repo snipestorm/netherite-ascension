@@ -7,7 +7,7 @@ public class ClientScreenOpener {
 
     public static void openRecipeScreen(Identifier texture) {
 
-        Minecraft.getInstance().setScreen(
+        Minecraft.getInstance().setScreenAndShow(
                 new CustomImageScreen(
                         new ScreenData(texture, 192, 192)
                 )

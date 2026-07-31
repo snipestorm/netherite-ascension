@@ -22,27 +22,27 @@ public class ModItemTagProvider extends FabricTagsProvider.ItemTagsProvider {
      */
     @Override
     protected void addTags(HolderLookup.Provider registries) {
-        valueLookupBuilder(ItemTags.SWORDS).add(ModItems.DIVINE_NETHERITE_SWORD);
-        valueLookupBuilder(ItemTags.PICKAXES).add(ModItems.DIVINE_NETHERITE_PICKAXE);
-        valueLookupBuilder(ItemTags.AXES).add(ModItems.DIVINE_NETHERITE_AXE);
-        valueLookupBuilder(ItemTags.SHOVELS).add(ModItems.DIVINE_NETHERITE_SHOVEL);
-        valueLookupBuilder(ItemTags.HOES).add(ModItems.DIVINE_NETHERITE_HOE);
-        valueLookupBuilder(ItemTags.SPEARS).add(ModItems.DIVINE_NETHERITE_SPEAR);
+        tag(ItemTags.SWORDS).add(ModItems.getRK(ModItems.DIVINE_NETHERITE_SWORD));
+        tag(ItemTags.PICKAXES).add(ModItems.getRK(ModItems.DIVINE_NETHERITE_PICKAXE));
+        tag(ItemTags.AXES).add(ModItems.getRK(ModItems.DIVINE_NETHERITE_AXE));
+        tag(ItemTags.SHOVELS).add(ModItems.getRK(ModItems.DIVINE_NETHERITE_SHOVEL));
+        tag(ItemTags.HOES).add(ModItems.getRK(ModItems.DIVINE_NETHERITE_HOE));
+        tag(ItemTags.SPEARS).add(ModItems.getRK(ModItems.DIVINE_NETHERITE_SPEAR));
 
-        valueLookupBuilder(ItemTags.HEAD_ARMOR)
-        .add(ModItems.DIVINE_NETHERITE_HELMET);
-        valueLookupBuilder(ItemTags.CHEST_ARMOR)
-        .add(ModItems.DIVINE_NETHERITE_CHESTPLATE);
-        valueLookupBuilder(ItemTags.LEG_ARMOR)
-        .add(ModItems.DIVINE_NETHERITE_LEGGINGS);
-        valueLookupBuilder(ItemTags.FOOT_ARMOR)
-        .add(ModItems.DIVINE_NETHERITE_BOOTS);
-
-
+        tag(ItemTags.HEAD_ARMOR)
+        .add(ModItems.getRK(ModItems.DIVINE_NETHERITE_HELMET));
+        tag(ItemTags.CHEST_ARMOR)
+        .add(ModItems.getRK(ModItems.DIVINE_NETHERITE_CHESTPLATE));
+        tag(ItemTags.LEG_ARMOR)
+        .add(ModItems.getRK(ModItems.DIVINE_NETHERITE_LEGGINGS));
+        tag(ItemTags.FOOT_ARMOR)
+        .add(ModItems.getRK(ModItems.DIVINE_NETHERITE_BOOTS));
 
 
-        valueLookupBuilder(ModTags.Items.DIVINE_NETHERITE_REPAIRABLE)
-                .add(ModItems.DIVINE_NETHERITE_INGOT);
+
+
+        tag(ModTags.Items.DIVINE_NETHERITE_REPAIRABLE)
+                .add(ModItems.getRK(ModItems.DIVINE_NETHERITE_INGOT));
 
     }
 }

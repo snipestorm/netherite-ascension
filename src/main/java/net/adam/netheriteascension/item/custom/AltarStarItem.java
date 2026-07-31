@@ -5,7 +5,8 @@ import net.adam.netheriteascension.block.ModBlocks;
 import net.adam.netheriteascension.block.custom.DivineAltarBlock;
 import net.adam.netheriteascension.entity.AltarStarEntity;
 import net.adam.netheriteascension.util.NetheriteAscensionHelper;
-import net.minecraft.advancements.CriteriaTriggers;
+
+import net.minecraft.advancements.triggers.CriteriaTriggers;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;

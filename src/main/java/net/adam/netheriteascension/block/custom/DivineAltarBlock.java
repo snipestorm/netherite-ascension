@@ -9,6 +9,7 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.EntitySpawnReason;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.EntityTypes;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -83,7 +84,7 @@ public class DivineAltarBlock extends Block {
     }
 
     private void spawnVisualLightning(Level level, BlockPos pos) {
-        EntityType.LIGHTNING_BOLT.spawn((ServerLevel) level, pos, EntitySpawnReason.TRIGGERED).setVisualOnly(true);
+        EntityTypes.LIGHTNING_BOLT.spawn((ServerLevel) level, pos, EntitySpawnReason.TRIGGERED).setVisualOnly(true);
     }
 
     private void spawnExplosionParticles(ServerLevel level, BlockPos pos) {
